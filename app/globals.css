@@ -19,13 +19,13 @@
 }
 
 html.light {
-  /* Light theme - Neutra Moderna */
-  --color-bg: #f8fafc;
-  --color-surface: #ffffff;
-  --color-surface2: #f1f5f9;
-  --color-border: #e2e8f0;
-  --color-text: #0f172a;
-  --color-muted: #64748b;
+  /* Light theme - Neutra Moderna (tonos gris) */
+  --color-bg: #e8e8ec;
+  --color-surface: #f5f5f7;
+  --color-surface2: #e0e0e5;
+  --color-border: #c8c8d0;
+  --color-text: #1a1a24;
+  --color-muted: #5a5a68;
   --color-accent-a: #dc2626;
   --color-accent-b: #0d9488;
   --color-accent-s: #d97706;
