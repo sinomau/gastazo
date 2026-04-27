@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: 'DM Sans', sans-serif;
+  --font-display: 'Syne', sans-serif;
+
+  /* Dark theme (default) - Neutra Moderna */
+  --color-bg: #0f0f14;
+  --color-surface: #1a1a24;
+  --color-surface2: #252532;
+  --color-border: #2e2e3e;
+  --color-text: #f1f5f9;
+  --color-muted: #94a3b8;
+  --color-accent-a: #f87171;
+  --color-accent-b: #2dd4bf;
+  --color-accent-s: #fbbf24;
+}
+
+html.light {
+  /* Light theme - Neutra Moderna */
+  --color-bg: #f8fafc;
+  --color-surface: #ffffff;
+  --color-surface2: #f1f5f9;
+  --color-border: #e2e8f0;
+  --color-text: #0f172a;
+  --color-muted: #64748b;
+  --color-accent-a: #dc2626;
+  --color-accent-b: #0d9488;
+  --color-accent-s: #d97706;
+}
+
+html.dark {
+  /* Dark theme explícito - Neutra Moderna */
+  --color-bg: #0f0f14;
+  --color-surface: #1a1a24;
+  --color-surface2: #252532;
+  --color-border: #2e2e3e;
+  --color-text: #f1f5f9;
+  --color-muted: #94a3b8;
+  --color-accent-a: #f87171;
+  --color-accent-b: #2dd4bf;
+  --color-accent-s: #fbbf24;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+::-webkit-scrollbar { 
+  width: 5px; 
+  height: 5px; 
+}
+
+::-webkit-scrollbar-track { 
+  background: var(--color-bg); 
+}
+
+::-webkit-scrollbar-thumb { 
+  background: var(--color-border); 
+  border-radius: 3px; 
+}
+
+.font-display { 
+  font-family: var(--font-display); 
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button { 
+  opacity: 1; 
+}
+
+/* Transiciones suaves para cambios de tema */
+* {
+  transition-property: background-color, border-color, color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+}
+
+/* Excluir ciertos elementos de la transición */
+[class*="animate-"],
+[class*="transition-"],
+[class*="transform"] {
+  transition-property: transform, opacity;
+}
+
+/* Ocultar scrollbar pero mantener funcionalidad */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}

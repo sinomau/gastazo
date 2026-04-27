@@ -1,0 +1,494 @@
+[
+  {
+    "table_name": "authorized_users",
+    "column_name": "email",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "authorized_users",
+    "column_name": "name",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "authorized_users",
+    "column_name": "person",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "authorized_users",
+    "column_name": "created_at",
+    "data_type": "timestamp with time zone",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "authorized_users",
+    "column_name": "couple_id",
+    "data_type": "uuid",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "card_dates",
+    "column_name": "id",
+    "data_type": "uuid",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "card_dates",
+    "column_name": "card_id",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "card_dates",
+    "column_name": "couple_id",
+    "data_type": "uuid",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "card_dates",
+    "column_name": "month",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "card_dates",
+    "column_name": "cierre_real",
+    "data_type": "integer",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "card_dates",
+    "column_name": "vencimiento_real",
+    "data_type": "integer",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "card_dates",
+    "column_name": "created_at",
+    "data_type": "timestamp with time zone",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "card_dates",
+    "column_name": "pagada",
+    "data_type": "boolean",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "cards",
+    "column_name": "id",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "cards",
+    "column_name": "name",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "cards",
+    "column_name": "owner",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "cards",
+    "column_name": "color",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "cards",
+    "column_name": "cierre",
+    "data_type": "integer",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "cards",
+    "column_name": "vencimiento",
+    "data_type": "integer",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "cards",
+    "column_name": "created_at",
+    "data_type": "timestamp with time zone",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "cards",
+    "column_name": "couple_id",
+    "data_type": "uuid",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "config",
+    "column_name": "key",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "config",
+    "column_name": "value",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "config",
+    "column_name": "updated_at",
+    "data_type": "timestamp with time zone",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "config",
+    "column_name": "couple_id",
+    "data_type": "uuid",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "couples",
+    "column_name": "id",
+    "data_type": "uuid",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "couples",
+    "column_name": "invite_code",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "couples",
+    "column_name": "created_at",
+    "data_type": "timestamp with time zone",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "couples",
+    "column_name": "split_method",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "couples",
+    "column_name": "split_pct_a",
+    "data_type": "integer",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "couples",
+    "column_name": "split_pct_b",
+    "data_type": "integer",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "couples",
+    "column_name": "mode",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "couples",
+    "column_name": "solo_mode",
+    "data_type": "boolean",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "fijo_pagos",
+    "column_name": "id",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "fijo_pagos",
+    "column_name": "fijo_id",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "fijo_pagos",
+    "column_name": "couple_id",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "fijo_pagos",
+    "column_name": "month",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "fijo_pagos",
+    "column_name": "pagado",
+    "data_type": "boolean",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "fijo_pagos",
+    "column_name": "created_at",
+    "data_type": "timestamp with time zone",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "fijos",
+    "column_name": "id",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "fijos",
+    "column_name": "name",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "fijos",
+    "column_name": "icon",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "fijos",
+    "column_name": "monto",
+    "data_type": "numeric",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "fijos",
+    "column_name": "category",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "fijos",
+    "column_name": "person",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "fijos",
+    "column_name": "card_id",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "fijos",
+    "column_name": "created_at",
+    "data_type": "timestamp with time zone",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "fijos",
+    "column_name": "couple_id",
+    "data_type": "uuid",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "gastos",
+    "column_name": "id",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "gastos",
+    "column_name": "fecha",
+    "data_type": "date",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "gastos",
+    "column_name": "monto",
+    "data_type": "numeric",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "gastos",
+    "column_name": "descripcion",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "gastos",
+    "column_name": "category",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "gastos",
+    "column_name": "card_id",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "gastos",
+    "column_name": "person",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "gastos",
+    "column_name": "shared",
+    "data_type": "boolean",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "gastos",
+    "column_name": "cuotas_total",
+    "data_type": "integer",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "gastos",
+    "column_name": "cuota_actual",
+    "data_type": "integer",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "gastos",
+    "column_name": "purchase_id",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "gastos",
+    "column_name": "month",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "gastos",
+    "column_name": "from_fijo",
+    "data_type": "boolean",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "gastos",
+    "column_name": "created_at",
+    "data_type": "timestamp with time zone",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "gastos",
+    "column_name": "couple_id",
+    "data_type": "uuid",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "gastos",
+    "column_name": "tags",
+    "data_type": "ARRAY",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "gastos",
+    "column_name": "comment",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "gastos",
+    "column_name": "split_override",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "salaries",
+    "column_name": "id",
+    "data_type": "uuid",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "salaries",
+    "column_name": "couple_id",
+    "data_type": "uuid",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "salaries",
+    "column_name": "person",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "salaries",
+    "column_name": "month",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "salaries",
+    "column_name": "amount",
+    "data_type": "numeric",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "salaries",
+    "column_name": "created_at",
+    "data_type": "timestamp with time zone",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "salaries",
+    "column_name": "updated_at",
+    "data_type": "timestamp with time zone",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "user_prefs",
+    "column_name": "email",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "user_prefs",
+    "column_name": "couple_id",
+    "data_type": "uuid",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "user_prefs",
+    "column_name": "last_card_id",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "user_prefs",
+    "column_name": "quick_categories",
+    "data_type": "ARRAY",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "user_prefs",
+    "column_name": "created_at",
+    "data_type": "timestamp with time zone",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "user_prefs",
+    "column_name": "updated_at",
+    "data_type": "timestamp with time zone",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "user_prefs",
+    "column_name": "month",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "user_prefs",
+    "column_name": "sueldo",
+    "data_type": "numeric",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "user_prefs",
+    "column_name": "person",
+    "data_type": "text",
+    "is_nullable": "YES"
+  }
+]

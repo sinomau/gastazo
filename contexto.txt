@@ -1,0 +1,55 @@
+App: Gastazo - Gastos compartidos en pareja
+Stack: Next.js + Supabase + Tailwind
+Características:
+- Login Google via Supabase Auth
+- Pareja: código invite, sync gastos compartidos
+- Dashboard: vista "ambos" vs "solo mí", balance, alquiler automático
+- Gastos: CRUD con categorías, tarjetas, cuotas, filtros
+- Cuotas: total mes seleccionado, detalle por gasto, cuota se actualiza x mes
+- Configuración: nombres, sueldos mensuales, alquiler mensual
+DB:
+- gastos: id, fecha, monto, descripcion, category, card_id, person, shared, cuotas_total, cuota_actual, month, tags, comment
+- cards: id, name, color, owner, cierre, vencimiento
+- config: couple_id, key, value (name_a, name_b, rent_amount)
+- salaries: couple_id, month, person, amount
+- authorized_users: email, couple_id, person, name
+Archivos clave:
+- app/dashboard/page.tsx - Dashboard
+- app/dashboard/gastos/page.tsx - Lista gastos
+- app/dashboard/cuotas/page.tsx - Cuotas
+- app/dashboard/configuracion/page.tsx - Config
+- app/dashboard/tarjetas/page.tsx - Tarjetas
+- components/GastoModal.tsx - Modal gasto
+
+compact
+Goal
+Build "Gastazo" - a shared expense tracking app for couples using Next.js, Supabase, and Tailwind. Features include: tracking personal and shared expenses, salary management, automatic rent tracking, installment/quotas tracking, and balance calculations between partners.
+Instructions
+- User is Mauro (Spanish speaker)
+- App runs locally at localhost:3000
+- Next.js + Supabase stack
+- Continue development as needed
+Discoveries
+- The app already had salaries table in Supabase but no UI to manage it
+- Originally expenses were filtered by month on server-side, causing issues when changing expense dates to different months - fixed by loading all expenses and filtering client-side
+- Installment tracking had complex calculation issues - resolved by calculating quota number dynamically based on selected month
+- Rent is configured once in settings and automatically applied each month, split 50/50
+- Dashboard has "solo mí" mode showing individual expenses vs combined view
+- The month selector in header was only showing current year, added previous year for date changes
+Accomplished
+1. Salaries in Configuration - Added section to input salaries for Person A and B, with month selector to edit historical months
+2. "Solo mí" Dashboard View - Toggle between combined view and personal view showing individual spending, shared expenses portion, rent portion, and whether salary covers expenses
+3. Automatic Rent - Configured once in settings, displayed separately from other shared expenses, always split 50/50
+4. Installments/Quotas Page - Shows total for selected month, detail list, quota number updates based on selected month, marks final quotas in red
+5. Minor fixes - Month selector now only shows 2026, default expense date is first day of selected month, expenses load from all months
+Relevant files / directories
+- app/dashboard/page.tsx - Main dashboard with balance, expenses, rent display
+- app/dashboard/gastos/page.tsx - Expense list with CRUD
+- app/dashboard/cuotas/page.tsx - Installments tracking page
+- app/dashboard/configuracion/page.tsx - Settings: names, salaries, rent
+- app/dashboard/tarjetas/page.tsx - Credit cards management
+- app/dashboard/layout.tsx - Navigation and month selector
+- components/GastoModal.tsx - Add/edit expense modal
+- lib/useCouple.ts - Couple context and auth
+- lib/MonthContext.tsx - Month state management
+- Supabase tables: gastos, cards, config, salaries, authorized_users
